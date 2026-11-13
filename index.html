@@ -1,1 +1,119 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAFEXX HOST</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#0b1020;
+  color:#fff;
+}
+header{
+  padding:22px;
+  background:#111a2e;
+  border-bottom:1px solid #26334c;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{font-size:23px;font-weight:bold;color:#8b9cff}
+.status{color:#50df9a;font-size:13px}
+main{padding:22px;max-width:900px;margin:auto}
+h1{font-size:26px}
+.subtitle{color:#9ba9c3}
+.stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin:25px 0;
+}
+.card{
+  background:#151f35;
+  padding:20px;
+  border-radius:14px;
+  border:1px solid #283650;
+}
+.number{font-size:27px;font-weight:bold;margin-top:10px}
+button{
+  border:0;
+  padding:13px 18px;
+  border-radius:9px;
+  color:white;
+  background:#5865f2;
+  font-weight:bold;
+  font-size:15px;
+  cursor:pointer;
+}
+.add{width:100%;margin:12px 0 25px}
+.bot{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.bot small{color:#50df9a}
+footer{
+  text-align:center;
+  padding:30px;
+  color:#7e8ba5;
+}
+@media(max-width:450px){
+  main{padding:15px}
+  .card{padding:15px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">⚡ HAFEXX HOST</div>
+  <div class="status">● لوحة الاستضافة</div>
+</header>
+
+<main>
+  <h1>مرحباً بك في HAFEXX HOST 🚀</h1>
+  <p class="subtitle">لوحة التحكم الخاصة باستضافة بوتات Python</p>
+
+  <section class="stats">
+    <div class="card">
+      <div>🤖 مجموع البوتات</div>
+      <div class="number" id="total">0</div>
+    </div>
+    <div class="card">
+      <div>🟢 البوتات النشطة</div>
+      <div class="number" id="active">0</div>
+    </div>
+  </section>
+
+  <button class="add" onclick="alert('سيتم تفعيل رفع البوتات بعد ربط السيرفر')">
+    ＋ إضافة بوت جديد
+  </button>
+
+  <div class="card">
+    <div class="bot">
+      <div>
+        <h3>📦 نظام إدارة البوتات</h3>
+        <small>بانتظار ربط السيرفر</small>
+      </div>
+      <span>⚙️</span>
+    </div>
+    <p class="subtitle">
+      يمكنك من هنا إدارة ملفات Python ومتابعة تشغيل البوتات بعد إعداد الخادم.
+    </p>
+  </div>
+</main>
+
+<footer>
+  HAFEXX HOST © 2026<br>
+  Powered by HAFEXX
+</footer>
+
+</body>
+</html>
+
